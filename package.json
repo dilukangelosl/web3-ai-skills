@@ -1,6 +1,6 @@
 {
   "name": "@dilukangelo/web3-ai-skills",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "CLI to initialize Web3 AI Agent Skills — Solidity, Rust, DApp frontends, auditing, RPC, and indexing for 2026",
   "main": "bin/cli.js",
   "type": "module",

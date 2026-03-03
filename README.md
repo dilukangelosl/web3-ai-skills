@@ -1,8 +1,22 @@
-# Web3 AI Skills
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dilukangelosl/web3-ai-skills/main/web3-ai-skills-logo.jpg" alt="Web3 AI Skills" width="200" />
+</p>
 
-> 🚀 AI Agent templates for Web3 development — Solidity, Rust, DApp frontends, auditing, RPC, and indexing.
+<h1 align="center">Web3 AI Skills</h1>
 
-Supercharge your AI coding assistant with specialized Web3 knowledge. This package provides ready-to-use agent configurations, skills, and workflows for building on EVM chains, Solana, and beyond.
+<p align="center">
+  <strong>Supercharge your AI coding assistant with Web3 expertise — Solidity, Rust, DApps, and beyond.</strong>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@dilukangelo/web3-ai-skills"><img src="https://img.shields.io/npm/v/@dilukangelo/web3-ai-skills.svg" alt="npm version" /></a>
+  <a href="https://github.com/dilukangelosl/web3-ai-skills/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@dilukangelo/web3-ai-skills.svg" alt="license" /></a>
+  <a href="https://www.npmjs.com/package/@dilukangelo/web3-ai-skills"><img src="https://img.shields.io/npm/dt/@dilukangelo/web3-ai-skills.svg" alt="downloads" /></a>
+</p>
+
+---
+
+Ready-to-use AI agent configurations, skills, and workflows for building on EVM chains, Solana, and beyond.
 
 ---
 
