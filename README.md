@@ -38,7 +38,7 @@ This creates a `.agent/` folder in your current directory with all Web3 agents, 
 | **web3-infra** | RPC optimization, Multicall3, MEV protection |
 | **web3-orchestrator** | Multi-agent coordination for full-stack DApps |
 
-### 🧩 8 Skills
+### 🧩 12 Skills
 
 | Skill | Description |
 |-------|-------------|
@@ -50,6 +50,10 @@ This creates a `.agent/` folder in your current directory with all Web3 agents, 
 | **rpc-optimization** | Multicall3, batching, caching, MEV protection |
 | **subgraph-indexing** | The Graph, Ponder, Subsquid, Envio |
 | **clean-code** | Web3-specific coding standards |
+| **web3-api-providers** | Alchemy, Moralis, Infura, QuickNode enhanced APIs |
+| **thirdweb-sdk** | Contract deploy, embed wallets, Engine, Pay |
+| **hardhat-foundry-testing** | Forge cheatcodes, Hardhat plugins, fuzz/invariant, CI |
+| **account-abstraction** | ERC-4337, paymasters, session keys, EIP-7702 |
 
 ### 🔄 4 Workflows
 
@@ -71,7 +75,7 @@ After running `init`, your project will have a `.agent/` folder:
 ├── GEMINI.md            # Core AI instructions
 ├── ARCHITECTURE.md      # System overview
 ├── agents/              # 6 specialist agents
-├── skills/              # 8 domain skills
+├── skills/              # 12 domain skills
 ├── workflows/           # 4 slash commands
 └── scripts/             # Validation scripts
 ```

@@ -9,7 +9,7 @@
 Web3 AI Skills is a modular system consisting of:
 
 - **6 Specialist Agents** — Web3-specific role-based AI personas
-- **8 Skills** — Deep domain knowledge modules for blockchain development
+- **12 Skills** — Deep domain knowledge modules for blockchain development
 - **4 Workflows** — Slash command procedures for common Web3 tasks
 
 ---
@@ -21,7 +21,7 @@ Web3 AI Skills is a modular system consisting of:
 ├── GEMINI.md                # Core instructions
 ├── ARCHITECTURE.md          # This file
 ├── agents/                  # 6 Specialist Agents
-├── skills/                  # 8 Skills
+├── skills/                  # 12 Skills
 ├── workflows/               # 4 Slash Commands
 └── scripts/                 # Validation Scripts
 ```
@@ -32,16 +32,16 @@ Web3 AI Skills is a modular system consisting of:
 
 | Agent                  | Focus                             | Skills Used                                      |
 | ---------------------- | --------------------------------- | ------------------------------------------------ |
-| `solidity-expert`      | EVM smart contracts, Foundry      | solidity-patterns, smart-contract-auditing        |
+| `solidity-expert`      | EVM smart contracts, Foundry      | solidity-patterns, smart-contract-auditing, hardhat-foundry-testing |
 | `rust-web3`            | Solana/Anchor, CosmWasm, Rust     | rust-smart-contracts                              |
-| `web3-frontend`        | Next.js + RainbowKit + Wagmi      | rainbowkit-wagmi, dapp-patterns                   |
-| `contract-auditor`     | Security audits, Slither, Mythril | smart-contract-auditing                           |
-| `web3-infra`           | RPC, indexers, nodes, subgraphs   | rpc-optimization, subgraph-indexing               |
+| `web3-frontend`        | Next.js + RainbowKit + Wagmi      | rainbowkit-wagmi, dapp-patterns, thirdweb-sdk, account-abstraction |
+| `contract-auditor`     | Security audits, Slither, Mythril | smart-contract-auditing, hardhat-foundry-testing  |
+| `web3-infra`           | RPC, indexers, nodes, subgraphs   | rpc-optimization, subgraph-indexing, web3-api-providers |
 | `web3-orchestrator`    | Multi-agent Web3 coordination     | All skills                                        |
 
 ---
 
-## 🧩 Skills (8)
+## 🧩 Skills (12)
 
 ### Smart Contracts
 
@@ -50,6 +50,7 @@ Web3 AI Skills is a modular system consisting of:
 | `solidity-patterns`         | Solidity 0.8.x+, ERC standards, gas optimization  |
 | `rust-smart-contracts`      | Anchor/Solana programs, CosmWasm, Stylus           |
 | `smart-contract-auditing`   | Audit methodology, Slither, Mythril, Aderyn        |
+| `hardhat-foundry-testing`   | Toolchains, cheatcodes, fuzz/invariant testing, CI |
 
 ### DApp Frontend
 
@@ -57,13 +58,16 @@ Web3 AI Skills is a modular system consisting of:
 | --------------------------- | -------------------------------------------------- |
 | `rainbowkit-wagmi`          | RainbowKit v2, Wagmi v2, viem, wallet integration |
 | `dapp-patterns`             | DApp architecture, IPFS, ENS, signing patterns     |
+| `thirdweb-sdk`              | Contract deploy, in-app wallets, Engine, Pay       |
+| `account-abstraction`       | ERC-4337, paymasters, session keys, EIP-7702       |
 
 ### Infrastructure
 
 | Skill                       | Description                                        |
 | --------------------------- | -------------------------------------------------- |
 | `rpc-optimization`          | RPC management, Multicall3, batching, MEV          |
-| `subgraph-indexing`         | The Graph, Ponder, custom indexers, event parsing  |
+| `subgraph-indexing`         | The Graph, Ponder, Subsquid, Envio, event parsing  |
+| `web3-api-providers`        | Alchemy, Moralis, Infura, QuickNode enhanced APIs  |
 
 ### General
 
@@ -111,9 +115,9 @@ skill-name/
 | Metric              | Value        |
 | ------------------- | ------------ |
 | **Total Agents**    | 6            |
-| **Total Skills**    | 8            |
+| **Total Skills**    | 12           |
 | **Total Workflows** | 4            |
-| **Coverage**        | Web3 / EVM / Solana / DApp |
+| **Coverage**        | Web3 / EVM / Solana / DApp / AA / APIs |
 
 ---
 
@@ -121,9 +125,10 @@ skill-name/
 
 | Need               | Agent                | Skills                                       |
 | ------------------- | -------------------- | -------------------------------------------- |
-| Solidity Contract   | `solidity-expert`    | solidity-patterns, smart-contract-auditing   |
+| Solidity Contract   | `solidity-expert`    | solidity-patterns, hardhat-foundry-testing    |
 | Rust Contract       | `rust-web3`          | rust-smart-contracts                          |
-| DApp Frontend       | `web3-frontend`      | rainbowkit-wagmi, dapp-patterns              |
-| Contract Audit      | `contract-auditor`   | smart-contract-auditing                       |
-| RPC / Infra         | `web3-infra`         | rpc-optimization, subgraph-indexing          |
+| DApp Frontend       | `web3-frontend`      | rainbowkit-wagmi, dapp-patterns, thirdweb-sdk |
+| Contract Audit      | `contract-auditor`   | smart-contract-auditing, hardhat-foundry-testing |
+| RPC / Infra         | `web3-infra`         | rpc-optimization, subgraph-indexing, web3-api-providers |
+| Account Abstraction | `web3-frontend`      | account-abstraction, thirdweb-sdk            |
 | Full-Stack DApp     | `web3-orchestrator`  | All skills                                    |

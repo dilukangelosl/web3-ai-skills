@@ -67,11 +67,11 @@ When auto-applying an agent, inform the user:
 
 | Project Type                                 | Primary Agent         | Skills                                       |
 | -------------------------------------------- | --------------------- | -------------------------------------------- |
-| **SMART CONTRACTS** (Solidity, EVM)          | `solidity-expert`     | solidity-patterns, smart-contract-auditing   |
-| **RUST CONTRACTS** (Solana, Anchor, CosmWasm) | `rust-web3`           | rust-smart-contracts, solana-patterns        |
-| **DAPP FRONTEND** (Next.js, RainbowKit)      | `web3-frontend`       | rainbowkit-wagmi, dapp-patterns              |
-| **SECURITY AUDIT** (Contract audit)          | `contract-auditor`    | smart-contract-auditing, vulnerability-scanner|
-| **RPC / INFRA** (Nodes, indexers)            | `web3-infra`          | rpc-optimization, subgraph-indexing          |
+| **SMART CONTRACTS** (Solidity, EVM)          | `solidity-expert`     | solidity-patterns, smart-contract-auditing, hardhat-foundry-testing |
+| **RUST CONTRACTS** (Solana, Anchor, CosmWasm) | `rust-web3`           | rust-smart-contracts                         |
+| **DAPP FRONTEND** (Next.js, RainbowKit)      | `web3-frontend`       | rainbowkit-wagmi, dapp-patterns, thirdweb-sdk, account-abstraction |
+| **SECURITY AUDIT** (Contract audit)          | `contract-auditor`    | smart-contract-auditing, hardhat-foundry-testing |
+| **RPC / INFRA** (Nodes, indexers, APIs)      | `web3-infra`          | rpc-optimization, subgraph-indexing, web3-api-providers |
 
 ---
 
@@ -130,6 +130,6 @@ When user's prompt is NOT in English:
 ### Agents & Skills
 
 - **Core Agents**: `solidity-expert`, `rust-web3`, `web3-frontend`, `contract-auditor`, `web3-infra`, `web3-orchestrator`
-- **Key Skills**: `solidity-patterns`, `rust-smart-contracts`, `rainbowkit-wagmi`, `smart-contract-auditing`, `rpc-optimization`, `dapp-patterns`, `clean-code`, `subgraph-indexing`
+- **Key Skills**: `solidity-patterns`, `rust-smart-contracts`, `rainbowkit-wagmi`, `smart-contract-auditing`, `rpc-optimization`, `dapp-patterns`, `clean-code`, `subgraph-indexing`, `web3-api-providers`, `thirdweb-sdk`, `hardhat-foundry-testing`, `account-abstraction`
 
 ---
